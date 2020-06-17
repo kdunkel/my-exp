@@ -38,14 +38,14 @@ const instructions_1 = magpieViews.view_generator("instructions", {
             Your task is to compare them and decide if they are the same or different. Press button "F" if you think they are the same, ad button "F" if you think they are different. Please be as fast and accurate as possible!
             <br />
             You get to practice this first`,
-  buttonText: 'go to practice'
+  buttonText: 'practice'
 });
 
 const instructions_2 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions_2',
   title: 'General Instructions',
-  text: `Now you will start the main experiment. Please be as fast an accurate as possible`,
+  text: `Now you will start the main experiment. Please be as fast and accurate as possible`,
   buttonText: 'start'
 });
 
@@ -104,7 +104,7 @@ const thanks = magpieViews.view_generator("thanks", {
 * https://magpie-ea.github.io/magpie-docs/01_designing_experiments/01_template_views/#trial-views
 */
 
-const main = custom_views.keypress_rotation_main({
+const main = custom_views.keypress_rotation_practice({
      trials: 12,
      name: 'practice',
      trial_type: 'practice',
