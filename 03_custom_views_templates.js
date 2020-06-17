@@ -3,8 +3,8 @@
 const custom_views = {};
 
 // Custom view template for practice trials
-custom_views.keypress_rotation_main = function(config) {
-    const keypress_rotation_main_function = {
+custom_views.keypress_rotation_practice = function(config) {
+    const keypress_rotation_practice_function = {
         name: config.name,
         title: magpieUtils.view.setter.title(config.title, ""),
         render: function(CT, magpie) {
@@ -124,7 +124,7 @@ custom_views.keypress_rotation_main = function(config) {
 
 
 
-// Custom view template for main/experimental trials
+// main trials
 custom_views.keypress_rotation_main = function(config) {
     const keypress_rotation_main_function = {
         name: config.name,
